@@ -12,6 +12,7 @@ struct LoginView: View {
         VStack {
             // Header
             HeaderView()
+            
             // Login Form
             
             // Create Account
