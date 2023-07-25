@@ -43,9 +43,7 @@ struct LoginView: View {
                 // Create Account
                 VStack {
                     Text("New around here?")
-                    Button("Create An Account") {
-                        // Show registration
-                    }
+                    NavigationLink("Create An Account", destination: RegisterView())
                 }
                 .padding(.bottom, 50)
                 
