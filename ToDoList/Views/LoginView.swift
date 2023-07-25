@@ -45,6 +45,7 @@ struct LoginView: View {
                     // Show registration
                 }
             }
+            .padding(.bottom, 50)
             
             Spacer()
         }
