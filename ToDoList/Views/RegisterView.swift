@@ -12,6 +12,7 @@ struct RegisterView: View {
         VStack {
             // Header
             HeaderView(title: "Register", subtitle: "Start organising your todos", angle: -15, background: .green)
+            Spacer()
         }
     }
 }
