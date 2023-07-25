@@ -13,41 +13,44 @@ struct LoginView: View {
     @State var password = ""
     
     var body: some View {
-        VStack {
-            // Header
-            HeaderView()
-            
-            // Login Form
-            Form {
-                TextField("Email Address", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                SecureField("Password", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
+        // Added this VStack to navigation view because we want to navigate to the register view using the create account button
+        NavigationView {
+            VStack {
+                // Header
+                HeaderView()
                 
-                Button {
-                    // Attempt log in
-                } label: {
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(Color.blue)
-                        
-                        Text("Log In")
-                            .foregroundColor(Color.white)
-                            .bold()
+                // Login Form
+                Form {
+                    TextField("Email Address", text: $email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    SecureField("Password", text: $password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    
+                    Button {
+                        // Attempt log in
+                    } label: {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .foregroundColor(Color.blue)
+                            
+                            Text("Log In")
+                                .foregroundColor(Color.white)
+                                .bold()
+                        }
                     }
                 }
-            }
-            
-            // Create Account
-            VStack {
-                Text("New around here?")
-                Button("Create An Account") {
-                    // Show registration
+                
+                // Create Account
+                VStack {
+                    Text("New around here?")
+                    Button("Create An Account") {
+                        // Show registration
+                    }
                 }
+                .padding(.bottom, 50)
+                
+                Spacer()
             }
-            .padding(.bottom, 50)
-            
-            Spacer()
         }
     }
 }
