@@ -7,14 +7,14 @@
 
 import SwiftUI
 
-struct ToDoListItem: View {
+struct ToDoListItemView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
-struct ToDoListItem_Previews: PreviewProvider {
+struct ToDoListItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ToDoListItem()
+        ToDoListItemView()
     }
 }
