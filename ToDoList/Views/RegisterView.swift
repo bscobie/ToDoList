@@ -24,6 +24,10 @@ struct RegisterView: View {
                     .textFieldStyle(DefaultTextFieldStyle())
                 SecureField("Password", text: $password)
                     .textFieldStyle(DefaultTextFieldStyle())
+                
+                TDLButton(title: "Create Account", background: .green) {
+                    // Attempt registration
+                }
             }
             .offset(y: -50)
             
