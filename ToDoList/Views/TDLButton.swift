@@ -8,15 +8,18 @@
 import SwiftUI
 
 struct TDLButton: View {
+    let title: String
+    let background: Color
+    
     var body: some View {
         Button {
-            // Attempt log in
+            // Action
         } label: {
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
-                    .foregroundColor(Color.blue)
+                    .foregroundColor(background)
                 
-                Text("Log In")
+                Text(title)
                     .foregroundColor(Color.white)
                     .bold()
             }
@@ -26,6 +29,6 @@ struct TDLButton: View {
 
 struct TDLButton_Previews: PreviewProvider {
     static var previews: some View {
-        TDLButton()
+        TDLButton(title: "Value", background: .pink)
     }
 }
