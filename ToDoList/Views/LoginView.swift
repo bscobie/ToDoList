@@ -26,18 +26,9 @@ struct LoginView: View {
                     SecureField("Password", text: $password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
-                    Button {
+                    TDLButton(title: "Log In", background: .blue, action: {
                         // Attempt log in
-                    } label: {
-                        ZStack {
-                            RoundedRectangle(cornerRadius: 10)
-                                .foregroundColor(Color.blue)
-                            
-                            Text("Log In")
-                                .foregroundColor(Color.white)
-                                .bold()
-                        }
-                    }
+                    })
                     .padding()
                 }
                 .offset(y: -50)
