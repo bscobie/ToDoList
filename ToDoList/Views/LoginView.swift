@@ -38,7 +38,7 @@ struct LoginView: View {
                                 .bold()
                         }
                     }
-               
+                    .padding()
                 }
                 .offset(y: -50)
                 
