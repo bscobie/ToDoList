@@ -16,7 +16,9 @@ class LoginViewViewModel: ObservableObject {
     init() {}
     
     func login() {
-        
+        guard validate() else {
+            return
+        }
     }
     
     func validate() -> Bool{
@@ -33,5 +35,7 @@ class LoginViewViewModel: ObservableObject {
             errorMessage = "Please enter valid email"
             return false
         }
+        
+        return true
     }
 }
