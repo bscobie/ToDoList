@@ -29,6 +29,7 @@ struct LoginView: View {
                     
                     TDLButton(title: "Log In", background: .blue) {
                         // Attempt log in
+                        viewModel.login()
                     }
                 }
                 .offset(y: -50)
