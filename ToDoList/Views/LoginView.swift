@@ -23,12 +23,14 @@ struct LoginView: View {
                 Form {
                     TextField("Email Address", text: $email)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
+                        .autocapitalization(.none)
+                    
                     SecureField("Password", text: $password)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
-                    TDLButton(title: "Log In", background: .blue, action: {
+                    TDLButton(title: "Log In", background: .blue) {
                         // Attempt log in
-                    })
+                    }
                 }
                 .offset(y: -50)
                 
