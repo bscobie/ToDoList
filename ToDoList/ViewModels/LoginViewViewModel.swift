@@ -14,7 +14,10 @@ class LoginViewViewModel: ObservableObject {
     init() {}
     
     func login() {
-        
+        guard !email.trimmingCharacters(in: .whitespaces).isEmpty,
+              !password.trimmingCharacters(in: .whitespaces).isEmpty else {
+            return
+        }
     }
     
     func validate() {
