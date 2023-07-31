@@ -25,6 +25,7 @@ struct RegisterView: View {
                 SecureField("Password", text: $password)
                     .textFieldStyle(DefaultTextFieldStyle())
             }
+            .offset(y: -50)
             
             Spacer()
         }
