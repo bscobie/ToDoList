@@ -29,7 +29,6 @@ struct LoginView: View {
                     TDLButton(title: "Log In", background: .blue, action: {
                         // Attempt log in
                     })
-                    .padding()
                 }
                 .offset(y: -50)
                 

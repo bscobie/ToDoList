@@ -25,6 +25,7 @@ struct TDLButton: View {
                     .bold()
             }
         }
+        .padding()
     }
 }
 
