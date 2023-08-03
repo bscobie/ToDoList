@@ -9,6 +9,7 @@ import SwiftUI
 
 struct NewItemView: View {
     @StateObject var viewModel = NewItemViewViewModel()
+    @Binding var newItemPresented: Bool
     
     var body: some View {
         VStack {
@@ -26,6 +27,7 @@ struct NewItemView: View {
                 
                 TDLButton(title: "Save", background: .pink) {
                     viewModel.save()
+                    newItemPresented = false
                 }
             }
         }
@@ -34,6 +36,10 @@ struct NewItemView: View {
 
 struct NewItemView_Previews: PreviewProvider {
     static var previews: some View {
-        NewItemView()
+        NewItemView(newItemPresented: Binding(get: {
+            return true
+        }, set: { _ in
+            
+        }))
     }
 }
