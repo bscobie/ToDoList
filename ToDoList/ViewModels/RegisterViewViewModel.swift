@@ -4,6 +4,7 @@
 //
 //  Created by Ben Scobie on 25/07/23.
 //
+import FirebaseFirestore
 import FirebaseAuth
 import Foundation
 
