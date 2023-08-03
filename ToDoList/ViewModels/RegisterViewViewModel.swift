@@ -4,6 +4,7 @@
 //
 //  Created by Ben Scobie on 25/07/23.
 //
+import FirebaseAuth
 import Foundation
 
 class RegisterViewViewModel: ObservableObject {
@@ -16,6 +17,12 @@ class RegisterViewViewModel: ObservableObject {
     func register() {
         guard validate() else {
             return
+        }
+        
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            guard let userId = result?.user.uid else {
+                return
+            }
         }
     
     }
