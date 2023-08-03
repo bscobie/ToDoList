@@ -23,8 +23,14 @@ class RegisterViewViewModel: ObservableObject {
             guard let userId = result?.user.uid else {
                 return
             }
+            
+            self?.insertUserRecord(id: userId)
         }
     
+    }
+    
+    private func insertUserRecord(id: String) {
+        
     }
     
     private func validate() -> Bool {
