@@ -14,6 +14,13 @@ struct ToDoListView: View {
                 
             }
             .navigationTitle("To Do List")
+            .toolbar {
+                Button {
+                    
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
         }
     }
 }
