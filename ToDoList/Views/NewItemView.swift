@@ -22,6 +22,10 @@ struct NewItemView: View {
                 
                 DatePicker("Due Date", selection: $viewModel.dueDate)
                     .datePickerStyle(GraphicalDatePickerStyle())
+                
+                TDLButton(title: "Save", background: .pink) {
+                    viewModel.save()
+                }
             }
         }
     }
