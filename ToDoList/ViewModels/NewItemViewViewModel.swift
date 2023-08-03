@@ -16,4 +16,16 @@ class NewItemViewViewModel: ObservableObject {
     func save() {
         
     }
+    
+    var canSave: Bool {
+        guard !title.trimmingCharacters(in: .whitespaces).isEmpty else {
+            return false
+        }
+        
+        guard dueDate >= Date().addingTimeInterval(-86400) else {
+            return false
+        }
+        
+        return true
+    }
 }
