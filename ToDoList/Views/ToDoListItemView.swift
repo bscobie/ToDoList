@@ -23,6 +23,13 @@ struct ToDoListItemView: View {
             }
             
             Spacer()
+            
+            Button {
+                
+            } label: {
+                Image(systemName: item.isDone ? "checkmark.circle.fill" : "circle")
+            }
+            
         }
     }
 }
