@@ -24,16 +24,22 @@ struct ProfileView: View {
                 VStack(alignment: .leading) {
                     HStack {
                         Text("Name: ")
+                            .bold()
                         Text("name here")
                     }
+                    .padding()
                     HStack {
                         Text("Email: ")
+                            .bold()
                         Text("email here")
                     }
+                    .padding()
                     HStack {
                         Text("Member Since: ")
+                            .bold()
                         Text("count here")
                     }
+                    .padding()
                 }
                 .padding()
                 
