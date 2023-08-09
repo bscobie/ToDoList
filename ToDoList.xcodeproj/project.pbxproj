@@ -19,6 +19,7 @@
 		846F904E2A593E7500A0A39B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 846F904D2A593E7500A0A39B /* FirebaseAuth */; };
 		846F90502A593E7500A0A39B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 846F904F2A593E7500A0A39B /* FirebaseFirestore */; };
 		846F90522A593E7500A0A39B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 846F90512A593E7500A0A39B /* FirebaseFirestoreSwift */; };
+		84CB56EE2A836AD600592C3C /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84CB56ED2A836AD600592C3C /* Launch Screen.storyboard */; };
 		84D79D022A5941A300663E84 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84D79D012A5941A300663E84 /* GoogleService-Info.plist */; };
 		84D79D082A6F874500663E84 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D79D072A6F874500663E84 /* ProfileView.swift */; };
 		84D79D0A2A6F876700663E84 /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D79D092A6F876700663E84 /* ToDoListView.swift */; };
@@ -68,6 +69,7 @@
 		846F90032A5935C800A0A39B /* ToDoListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		846F90072A5935C800A0A39B /* ToDoListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITests.swift; sourceTree = "<group>"; };
 		846F90092A5935C800A0A39B /* ToDoListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		84CB56ED2A836AD600592C3C /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		84D79D012A5941A300663E84 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "ToDoList/Other/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		84D79D072A6F874500663E84 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		84D79D092A6F876700663E84 /* ToDoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListView.swift; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				846F8FF02A5935C700A0A39B /* Assets.xcassets */,
 				84D79D012A5941A300663E84 /* GoogleService-Info.plist */,
 				84376E3B2A7B873300AB7DA7 /* Extensions.swift */,
+				84CB56ED2A836AD600592C3C /* Launch Screen.storyboard */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 			files = (
 				846F8FF42A5935C700A0A39B /* Preview Assets.xcassets in Resources */,
 				846F8FF12A5935C700A0A39B /* Assets.xcassets in Resources */,
+				84CB56EE2A836AD600592C3C /* Launch Screen.storyboard in Resources */,
 				84D79D022A5941A300663E84 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,6 +550,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -575,6 +580,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
