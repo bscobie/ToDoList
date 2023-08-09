@@ -58,6 +58,9 @@ struct ProfileView: View {
             }
             .navigationTitle("Profile")
         }
+        .onAppear{
+            viewModel.fetchUser()
+        }
     }
 }
 
