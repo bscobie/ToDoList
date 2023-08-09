@@ -14,43 +14,47 @@ struct ProfileView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Image(systemName: "person.circle")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .foregroundColor(Color.blue)
-                    .frame(width: 125, height: 125)
-                    .padding()
-                // Info
-                VStack(alignment: .leading) {
-                    HStack {
-                        Text("Name: ")
-                            .bold()
-                        Text("name here")
+                if let user = viewModel.user {
+                    Image(systemName: "person.circle")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .foregroundColor(Color.blue)
+                        .frame(width: 125, height: 125)
+                        .padding()
+                    // Info
+                    VStack(alignment: .leading) {
+                        HStack {
+                            Text("Name: ")
+                                .bold()
+                            Text("name here")
+                        }
+                        .padding()
+                        HStack {
+                            Text("Email: ")
+                                .bold()
+                            Text("email here")
+                        }
+                        .padding()
+                        HStack {
+                            Text("Member Since: ")
+                                .bold()
+                            Text("count here")
+                        }
+                        .padding()
                     }
                     .padding()
-                    HStack {
-                        Text("Email: ")
-                            .bold()
-                        Text("email here")
+                    
+                    // sign out
+                    Button("Log Out") {
+                        viewModel.logOut()
                     }
+                    .tint(.red)
                     .padding()
-                    HStack {
-                        Text("Member Since: ")
-                            .bold()
-                        Text("count here")
-                    }
-                    .padding()
+                    
+                    Spacer()
+                } else {
+                    Text("Loading Profile...")
                 }
-                .padding()
-                
-                // sign out
-                Button("Log Out") {
-                    viewModel.logOut()
-                }
-                .tint(.red)
-                .padding()
-                
-                Spacer()
             }
             .navigationTitle("Profile")
         }
