@@ -14,7 +14,37 @@ struct ProfileView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Image(systemName: "person.circle")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundColor(Color.blue)
+                    .frame(width: 125, height: 125)
+                    .padding()
+                // Info
+                VStack(alignment: .leading) {
+                    HStack {
+                        Text("Name: ")
+                        Text("name here")
+                    }
+                    HStack {
+                        Text("Email: ")
+                        Text("email here")
+                    }
+                    HStack {
+                        Text("Member Since: ")
+                        Text("count here")
+                    }
+                }
+                .padding()
                 
+                // sign out
+                Button("Log Out") {
+                    viewModel.logOut()
+                }
+                .tint(.red)
+                .padding()
+                
+                Spacer()
             }
             .navigationTitle("Profile")
         }
